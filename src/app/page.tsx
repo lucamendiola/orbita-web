@@ -153,13 +153,21 @@ export default function Home() {
       <section className="about">
         <div className="about-grid">
           <FadeIn direction="left">
-            <div className="about-img" style={{ background: "linear-gradient(135deg, rgba(163,180,162,0.12), rgba(190,174,151,0.08))", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <div className="about-img" style={{ background: "#000", overflow: "hidden" }}>
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              >
+                <source src="/videos/satisfaccion.mp4" type="video/mp4" />
+              </video>
               <div className="about-stat">
                 <div className="s-sparkle" />
                 <div className="s-num">98%</div>
                 <div className="s-label">Satisfacci&oacute;n de<br />nuestras familias</div>
               </div>
-              <span style={{ fontSize: 14, color: "#888" }}>Foto del equipo en consulta</span>
             </div>
           </FadeIn>
           <FadeIn direction="right" delay={0.2}>

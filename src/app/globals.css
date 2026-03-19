@@ -377,12 +377,10 @@ nav {
 .hero-img {
   position: relative;
   z-index: 1;
-  width: 380px;
-  height: 440px;
-  border-radius: 30% 70% 60% 40% / 50% 40% 60% 50%;
-  overflow: hidden;
+  width: 420px;
+  height: 480px;
 }
-.hero-img img { object-fit: cover; }
+.hero-img img { object-fit: contain; object-position: center bottom; }
 .sparkle {
   position: absolute;
   border-radius: 50%;
@@ -1455,7 +1453,7 @@ footer {
   .hero { grid-template-columns: 1fr; min-height: auto; padding: 60px 24px; }
   .hero-visual { height: 360px; }
   .hero-blob { width: 320px; height: 320px; }
-  .hero-img { width: 260px; height: 320px; }
+  .hero-img { width: 280px; height: 340px; }
   .trust-bar { padding: 28px 24px; }
   .trust-logos { gap: 24px; }
   .proceso-steps { grid-template-columns: 1fr; }
