@@ -76,6 +76,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           source={post.content}
           options={{
             mdxOptions: {
+              format: post.format,
               rehypePlugins: [rehypeRaw],
             },
           }}

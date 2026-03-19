@@ -16,9 +16,10 @@ export interface BlogPost {
   tags: string[];
   readingTime: string;
   content: string;
+  format: "md" | "mdx";
 }
 
-export type BlogPostMeta = Omit<BlogPost, "content">;
+export type BlogPostMeta = Omit<BlogPost, "content" | "format">;
 
 function parseFrontmatter(slug: string, raw: string) {
   const { data, content } = matter(raw);
@@ -68,7 +69,8 @@ export function getPost(slug: string): BlogPost | null {
 
   if (!filePath) return null;
   const raw = fs.readFileSync(filePath, "utf-8");
-  return parseFrontmatter(slug, raw);
+  const format = filePath.endsWith(".mdx") ? "mdx" : "md";
+  return { ...parseFrontmatter(slug, raw), format } as BlogPost;
 }
 
 export function getAllSlugs(): string[] {
