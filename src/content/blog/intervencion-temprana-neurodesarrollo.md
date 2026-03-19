@@ -2,7 +2,7 @@
 title: "Intervención temprana: por qué los primeros 3 años son críticos para el neurodesarrollo"
 description: "La intervención temprana antes de los 3 años mejora hasta 30% el desarrollo cognitivo según NDSS. Guía completa para padres sobre plasticidad cerebral y señales de alerta."
 date: "2026-03-15"
-author: "Dr. Juan Francisco Lozano"
+author: "Luca Mendiola"
 tags: ["intervención temprana", "neurodesarrollo", "plasticidad cerebral"]
 coverImage: "/images/blog/intervencion-temprana.jpg"
 coverImageAlt: "Un niño pequeño jugando con bloques de colores durante una sesión de estimulación temprana en un entorno clínico cálido"

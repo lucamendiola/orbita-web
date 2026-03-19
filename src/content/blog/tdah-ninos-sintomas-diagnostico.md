@@ -2,7 +2,7 @@
 title: "TDAH en niños: síntomas, diagnóstico y qué hacer como padre"
 description: "El 5% de los niños en México tiene TDAH, pero solo el 8% recibe diagnóstico. Aprende a identificar síntomas por edad, el proceso diagnóstico y qué hacer."
 date: "2026-03-17"
-author: "Dra. Sofía García"
+author: "Luca Mendiola"
 tags: ["TDAH", "desarrollo infantil", "diagnóstico", "neurodesarrollo", "padres"]
 coverImage: "/images/blog/tdah-ninos.jpg"
 coverImageAlt: "Un niño concentrado jugando con bloques de colores durante una sesión de terapia conductual en un consultorio pediátrico"
@@ -107,11 +107,8 @@ Solo el 8% de los niños con TDAH en México reciben diagnóstico y tratamiento 
   <svg viewBox="0 0 300 300" style="max-width: 300px; height: auto; font-family: " role="img" aria-label="Gráfica de dona mostrando que solo el 8 por ciento de los niños con TDAH en México reciben diagnóstico y tratamiento">
     <title>Solo el 8% de los niños con TDAH en México reciben diagnóstico y tratamiento</title>
     <desc>Gráfica de dona: 8% en color coral representa niños diagnosticados y tratados, 92% en gris claro representa niños sin diagnóstico. Fuente: Fundación UNAM.</desc>
-    
     <circle cx="150" cy="150" r="100" fill="none" stroke="#dddee0" stroke-width="32" />
-    
     <circle cx="150" cy="150" r="100" fill="none" stroke="#f56c5a" stroke-width="32" stroke-dasharray="50.27 628.32" stroke-dashoffset="0" stroke-linecap="round" transform="rotate(-90 150 150)" />
-    
     <text x="150" y="142" text-anchor="middle" font-size="42" font-weight="800" fill="#f56c5a">8%</text>
     <text x="150" y="168" text-anchor="middle" font-size="12" fill="#444444" opacity="0.7">diagnosticados</text>
     <text x="150" y="184" text-anchor="middle" font-size="12" fill="#444444" opacity="0.7">y tratados</text>
@@ -135,25 +132,19 @@ El 70% de los casos de TDAH coexisten con otras condiciones como trastornos de a
   <svg viewBox="0 0 560 320" style="max-width: 100%; height: auto; font-family: " role="img" aria-label="Gráfica de barras horizontales mostrando las condiciones que coexisten con el TDAH: trastornos de aprendizaje 70%, problemas de conducta 50%, ansiedad 40%, depresión 33%">
     <title>Condiciones que coexisten con el TDAH</title>
     <desc>Gráfica de barras horizontales. Trastornos de aprendizaje: 70%. Problemas de conducta: 50%. Ansiedad: 40%. Depresión: 33%. Fuente: Secretaría de Salud México y CDC.</desc>
-    
     <text x="280" y="28" text-anchor="middle" font-size="16" font-weight="700" fill="#3d4e58">Condiciones que coexisten con el TDAH</text>
-    
     <text x="195" y="72" text-anchor="end" font-size="13" fill="#444444">Trast. de aprendizaje</text>
     <rect x="200" y="58" width="238.0" height="22" rx="4" fill="#f56c5a" />
     <text x="446.0" y="74" text-anchor="start" font-size="13" font-weight="700" fill="#f56c5a">70%</text>
-    
     <text x="195" y="117" text-anchor="end" font-size="13" fill="#444444">Problemas de conducta</text>
     <rect x="200" y="103" width="170.0" height="22" rx="4" fill="#3d4e58" />
     <text x="378.0" y="119" text-anchor="start" font-size="13" font-weight="700" fill="#3d4e58">50%</text>
-    
     <text x="195" y="162" text-anchor="end" font-size="13" fill="#444444">Ansiedad</text>
     <rect x="200" y="148" width="136.0" height="22" rx="4" fill="#3d4e58" />
     <text x="344.0" y="164" text-anchor="start" font-size="13" font-weight="700" fill="#3d4e58">40%</text>
-    
     <text x="195" y="207" text-anchor="end" font-size="13" fill="#444444">Depresión</text>
     <rect x="200" y="193" width="112.2" height="22" rx="4" fill="#a3b4a2" />
     <text x="320.2" y="209" text-anchor="start" font-size="13" font-weight="700" fill="#a3b4a2">33%</text>
-    
     <text x="280" y="260" text-anchor="middle" font-size="10" fill="#444444" opacity="0.45">Fuente: Secretaría de Salud México / CDC</text>
   </svg>
 </figure>

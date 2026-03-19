@@ -2,7 +2,7 @@
 title: "Evaluación del neurodesarrollo: qué esperar en la primera cita"
 description: "La AAP recomienda tamizaje del desarrollo a los 9, 18 y 30 meses. Conoce qué sucede en una evaluación de neurodesarrollo infantil paso a paso."
 date: "2026-03-14"
-author: "Dr. Juan Francisco Lozano"
+author: "Luca Mendiola"
 tags: ["evaluación", "primera cita", "neurodesarrollo"]
 coverImage: "/images/blog/evaluacion-neurodesarrollo.jpg"
 coverImageAlt: "Consultorio pediátrico con ambiente cálido donde un especialista evalúa el desarrollo de un niño pequeño junto a sus padres"
@@ -81,61 +81,40 @@ No todas se aplican en la primera consulta. El especialista decide cuáles son r
 
 <figure class="chart-container" style="margin: 2.5rem auto; text-align: center; padding: 1.5rem; max-width: 480px">
 <svg viewBox="0 0 480 530" role="img" aria-label="Diagrama vertical del proceso de evaluación en Órbita Centro de Neurodesarrollo, mostrando 5 pasos desde el contacto inicial hasta el acompañamiento continuo" style="width: 100%; height: auto; background: transparent">
-
-  
   <circle cx="40" cy="45" r="18" fill="#f56c5a" />
   <text x="40" y="51" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold" font-family="system-ui, sans-serif">1</text>
   <rect x="70" y="20" width="380" height="50" rx="12" ry="12" fill="#3d4e58" />
   <text x="260" y="42" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="600" font-family="system-ui, sans-serif">Contacto inicial</text>
   <text x="260" y="58" text-anchor="middle" fill="#a3b4a2" font-size="11" font-family="system-ui, sans-serif">WhatsApp o llamada al 81 8275 1125</text>
-
-  
   <line x1="260" y1="70" x2="260" y2="110" stroke="#a3b4a2" stroke-width="2.5" stroke-dasharray="6,4" />
   <polygon points="252,106 260,116 268,106" fill="#a3b4a2" />
-
-  
   <circle cx="40" cy="145" r="18" fill="#f56c5a" />
   <text x="40" y="151" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold" font-family="system-ui, sans-serif">2</text>
   <rect x="70" y="120" width="380" height="50" rx="12" ry="12" fill="#3d4e58" />
   <text x="260" y="142" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="600" font-family="system-ui, sans-serif">Primera consulta</text>
   <text x="260" y="158" text-anchor="middle" fill="#a3b4a2" font-size="11" font-family="system-ui, sans-serif">Evaluación integral con especialista</text>
-
-  
   <line x1="260" y1="170" x2="260" y2="210" stroke="#a3b4a2" stroke-width="2.5" stroke-dasharray="6,4" />
   <polygon points="252,206 260,216 268,206" fill="#a3b4a2" />
-
-  
   <circle cx="40" cy="245" r="18" fill="#f56c5a" />
   <text x="40" y="251" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold" font-family="system-ui, sans-serif">3</text>
   <rect x="70" y="220" width="380" height="50" rx="12" ry="12" fill="#3d4e58" />
   <text x="260" y="242" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="600" font-family="system-ui, sans-serif">Estudios especializados</text>
   <text x="260" y="258" text-anchor="middle" fill="#a3b4a2" font-size="11" font-family="system-ui, sans-serif">Solo si el especialista lo considera necesario</text>
-
-  
   <line x1="260" y1="270" x2="260" y2="310" stroke="#a3b4a2" stroke-width="2.5" stroke-dasharray="6,4" />
   <polygon points="252,306 260,316 268,306" fill="#a3b4a2" />
-
-  
   <circle cx="40" cy="345" r="18" fill="#f56c5a" />
   <text x="40" y="351" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold" font-family="system-ui, sans-serif">4</text>
   <rect x="70" y="320" width="380" height="50" rx="12" ry="12" fill="#3d4e58" />
   <text x="260" y="342" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="600" font-family="system-ui, sans-serif">Plan de intervención personalizado</text>
   <text x="260" y="358" text-anchor="middle" fill="#a3b4a2" font-size="11" font-family="system-ui, sans-serif">Terapias, frecuencia y objetivos claros</text>
-
-  
   <line x1="260" y1="370" x2="260" y2="410" stroke="#a3b4a2" stroke-width="2.5" stroke-dasharray="6,4" />
   <polygon points="252,406 260,416 268,406" fill="#a3b4a2" />
-
-  
   <circle cx="40" cy="445" r="18" fill="#f56c5a" />
   <text x="40" y="451" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold" font-family="system-ui, sans-serif">5</text>
   <rect x="70" y="420" width="380" height="50" rx="12" ry="12" fill="#3d4e58" />
   <text x="260" y="442" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="600" font-family="system-ui, sans-serif">Acompañamiento continuo</text>
   <text x="260" y="458" text-anchor="middle" fill="#a3b4a2" font-size="11" font-family="system-ui, sans-serif">Seguimiento, ajustes y apoyo a la familia</text>
-
-  
   <text x="240" y="510" text-anchor="middle" fill="#444444" font-size="11" font-family="system-ui, sans-serif" font-style="italic">Fuente: Órbita Centro de Neurodesarrollo, 2025</text>
-
 </svg>
 </figure>
 

@@ -2,7 +2,7 @@
 title: "Señales de autismo en bebés y niños: guía para padres"
 description: "1 de cada 31 niños tiene autismo (CDC, 2025). Conoce las señales por edad, qué observar en niñas y cuándo buscar evaluación profesional."
 date: "2026-03-18"
-author: "Dr. Juan Francisco Lozano"
+author: "Luca Mendiola"
 tags: ["autismo", "desarrollo infantil", "señales"]
 coverImage: "/images/blog/senales-autismo.jpg"
 coverImageAlt: "Una madre observa con atención cómo su bebé juega en el piso, en un ambiente cálido y luminoso de hogar."

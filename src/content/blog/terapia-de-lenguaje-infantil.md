@@ -2,7 +2,7 @@
 title: "Terapia de lenguaje infantil: cuándo preocuparse y cuándo es normal"
 description: "El 7% de los niños en México tiene alteraciones del lenguaje (UNAM, 2018). Conoce los hitos, señales de alerta y cuándo buscar terapia de lenguaje."
 date: "2026-03-19"
-author: "Lic. Daniela Páez"
+author: "Luca Mendiola"
 tags: ["terapia de lenguaje", "desarrollo infantil", "neurodesarrollo", "hitos del habla"]
 coverImage: "/images/blog/terapia-lenguaje.jpg"
 coverImageAlt: "Terapeuta de lenguaje trabajando con un niño pequeño en una sesión de estimulación del habla en un consultorio cálido y profesional."
@@ -89,49 +89,31 @@ Esto no significa que si tienes un hijo varón debas preocuparte automáticament
 <figure class="chart-container" style="margin: 2.5rem 0; text-align: center; padding: 1.5rem; border-radius: 12px">
 <svg viewBox="0 0 560 400" role="img" aria-label="Gráfico de barras mostrando la prevalencia de trastornos del habla y lenguaje por grupo de edad: 3 a 6 años con 10.8 por ciento, 6 a 9 años con 9.4 por ciento, 9 a 12 años con 7.0 por ciento y 12 a 17 años con 4.8 por ciento. Fuente NIDCD NIH." xmlns="http://www.w3.org/2000/svg">
   <text x="280" y="30" text-anchor="middle" fill="#3d4e58" font-size="16" font-weight="bold" font-family="system-ui, sans-serif">Prevalencia de trastornos del habla y lenguaje por edad</text>
-
-  
   <line x1="100" y1="60" x2="100" y2="320" stroke="#cccccc" stroke-width="1"/>
-  
   <line x1="100" y1="320" x2="520" y2="320" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="4"/>
   <line x1="100" y1="268" x2="520" y2="268" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="4"/>
   <line x1="100" y1="216" x2="520" y2="216" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="4"/>
   <line x1="100" y1="164" x2="520" y2="164" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="4"/>
   <line x1="100" y1="112" x2="520" y2="112" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="4"/>
   <line x1="100" y1="60" x2="520" y2="60" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="4"/>
-
-  
   <text x="90" y="324" text-anchor="end" fill="#444444" font-size="12" font-family="system-ui, sans-serif">0%</text>
   <text x="90" y="272" text-anchor="end" fill="#444444" font-size="12" font-family="system-ui, sans-serif">2%</text>
   <text x="90" y="220" text-anchor="end" fill="#444444" font-size="12" font-family="system-ui, sans-serif">4%</text>
   <text x="90" y="168" text-anchor="end" fill="#444444" font-size="12" font-family="system-ui, sans-serif">6%</text>
   <text x="90" y="116" text-anchor="end" fill="#444444" font-size="12" font-family="system-ui, sans-serif">8%</text>
   <text x="90" y="64" text-anchor="end" fill="#444444" font-size="12" font-family="system-ui, sans-serif">10%</text>
-
-  
-  
   <rect x="130" y="86" width="70" height="234" rx="4" fill="#f56c5a" opacity="0.9"/>
   <text x="165" y="78" text-anchor="middle" fill="#f56c5a" font-size="13" font-weight="bold" font-family="system-ui, sans-serif">10.8%</text>
-
-  
   <rect x="230" y="116" width="70" height="204" rx="4" fill="#3d4e58" opacity="0.9"/>
   <text x="265" y="108" text-anchor="middle" fill="#3d4e58" font-size="13" font-weight="bold" font-family="system-ui, sans-serif">9.4%</text>
-
-  
   <rect x="330" y="168" width="70" height="152" rx="4" fill="#a3b4a2" opacity="0.9"/>
   <text x="365" y="160" text-anchor="middle" fill="#a3b4a2" font-size="13" font-weight="bold" font-family="system-ui, sans-serif">7.0%</text>
-
-  
   <rect x="430" y="216" width="70" height="104" rx="4" fill="#66dcc4" opacity="0.9"/>
   <text x="465" y="208" text-anchor="middle" fill="#66dcc4" font-size="13" font-weight="bold" font-family="system-ui, sans-serif">4.8%</text>
-
-  
   <text x="165" y="342" text-anchor="middle" fill="#444444" font-size="12" font-family="system-ui, sans-serif">3-6 años</text>
   <text x="265" y="342" text-anchor="middle" fill="#444444" font-size="12" font-family="system-ui, sans-serif">6-9 años</text>
   <text x="365" y="342" text-anchor="middle" fill="#444444" font-size="12" font-family="system-ui, sans-serif">9-12 años</text>
   <text x="465" y="342" text-anchor="middle" fill="#444444" font-size="12" font-family="system-ui, sans-serif">12-17 años</text>
-
-  
   <text x="280" y="380" text-anchor="middle" fill="#888888" font-size="11" font-family="system-ui, sans-serif">Fuente: NIDCD/NIH, Quick Statistics About Voice, Speech, and Language</text>
 </svg>
 </figure>

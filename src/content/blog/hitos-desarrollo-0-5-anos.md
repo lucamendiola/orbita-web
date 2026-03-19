@@ -2,7 +2,7 @@
 title: "Hitos del Desarrollo de 0 a 5 Años: La Guía Completa para Padres"
 description: "Guía completa de hitos del desarrollo infantil de 0 a 5 años. El 75% de los niños los alcanza a cada edad indicada (AAP, 2022). Conoce cada etapa y señales de alerta."
 date: "2026-03-16"
-author: "Dr. Juan Francisco Lozano"
+author: "Luca Mendiola"
 tags: ["desarrollo infantil", "hitos", "guía para padres"]
 coverImage: "/images/blog/hitos-desarrollo.jpg"
 coverImageAlt: "Madre observando a su bebé explorar juguetes coloridos durante una sesión de estimulación temprana en un ambiente cálido y luminoso."
