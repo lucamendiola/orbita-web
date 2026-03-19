@@ -272,11 +272,11 @@ export default function Home() {
           {SERVICES.slice(0, 6).map((s) => (
             <StaggerItem key={s.slug}>
               <Link href={`/servicios/${s.slug}`} className={`srv-card srv--${s.color}`}>
-                <div className="srv-img" style={{ position: "relative", background: "rgba(0,0,0,.03)" }}>
-                  <span style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, color: "#888" }}>Foto</span>
+                <div className="srv-img" style={{ overflow: "hidden" }}>
+                  <img src={s.image} alt={s.title} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
                 </div>
                 <div className="srv-info">
-                  <span className="srv-arrow">&nearr;</span>
+                  <span className="srv-arrow">↗</span>
                   <h3>{s.title}</h3>
                   <p>{s.desc}</p>
                 </div>
@@ -421,7 +421,7 @@ export default function Home() {
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
                 </svg>
               </span>
-              <span className="contacto-card-arrow">&nearr;</span>
+              <span className="contacto-card-arrow">↗</span>
               <h3>Ll&aacute;manos Ahora</h3>
             </a>
             <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="contacto-card">
@@ -431,7 +431,7 @@ export default function Home() {
                   <polyline points="22,6 12,13 2,6" />
                 </svg>
               </span>
-              <span className="contacto-card-arrow">&nearr;</span>
+              <span className="contacto-card-arrow">↗</span>
               <h3>WhatsApp</h3>
             </a>
           </div>

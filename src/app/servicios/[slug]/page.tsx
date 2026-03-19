@@ -201,7 +201,7 @@ export default async function ServicioPage({ params }: { params: Promise<{ slug:
                 <img src={s.image} alt={s.title} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
               </div>
               <div className="srv-info">
-                <span className="srv-arrow">&nearr;</span>
+                <span className="srv-arrow">↗</span>
                 <h3>{s.title}</h3>
                 <p>{s.desc}</p>
               </div>
