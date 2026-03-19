@@ -162,7 +162,7 @@ export default function Home() {
 
             {/* Center */}
             <div className="orbit-center">
-              <span className="orbit-center-icon">&#9825;</span>
+              <Image src="/brand/icon.png" alt="Órbita" width={64} height={64} style={{ objectFit: "contain" }} />
               <span className="orbit-center-label">Tu hijo</span>
             </div>
 
