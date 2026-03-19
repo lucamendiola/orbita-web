@@ -12,15 +12,23 @@ const WA_ICON = (
   </svg>
 );
 
+const CHECK_ICON = (
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style={{ flexShrink: 0, marginTop: 2 }}>
+    <circle cx="10" cy="10" r="10" fill="var(--teal)" opacity="0.12" />
+    <path d="M6 10.5l2.5 2.5 5.5-5.5" stroke="var(--teal)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
 export function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));
 }
 
-export function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Metadata {
-  // We need to handle this synchronously for static generation
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const service = SERVICES.find((s) => s.slug === slug);
   return {
-    title: "Servicio — Órbita Centro de Neurodesarrollo",
-    description: "Servicio especializado en neurodesarrollo.",
+    title: service ? `${service.title} — Órbita Centro de Neurodesarrollo` : "Servicio",
+    description: service?.longDesc.slice(0, 155) || "Servicio especializado en neurodesarrollo.",
   };
 }
 
@@ -36,11 +44,11 @@ export default async function ServicioPage({ params }: { params: Promise<{ slug:
       <Nav activePage="servicios" />
 
       {/* HERO */}
-      <section style={{ paddingBottom: 60 }}>
+      <section style={{ paddingBottom: 0 }}>
         <FadeIn>
           <p className="section-label">Servicios</p>
-          <h1 style={{ maxWidth: 640, marginBottom: 24 }}>{service.title}</h1>
-          <p style={{ maxWidth: 600, fontSize: 18, lineHeight: 1.75, marginBottom: 40 }}>
+          <h1 style={{ maxWidth: 700, marginBottom: 24 }}>{service.title}</h1>
+          <p style={{ maxWidth: 640, fontSize: 18, lineHeight: 1.8, marginBottom: 40, color: "var(--text-secondary)" }}>
             {service.longDesc}
           </p>
           <a href={WA_URL} target="_blank" rel="noopener noreferrer" className="btn-wa">
@@ -50,12 +58,12 @@ export default async function ServicioPage({ params }: { params: Promise<{ slug:
         </FadeIn>
       </section>
 
-      {/* IMAGE PLACEHOLDER */}
+      {/* IMAGE */}
       <FadeIn>
         <div style={{
-          margin: "0 80px 80px",
-          height: 400,
-          borderRadius: 20,
+          margin: "60px 80px 0",
+          height: 420,
+          borderRadius: 24,
           background: `var(--${service.color}-bg, var(--cream))`,
           display: "flex",
           alignItems: "center",
@@ -64,6 +72,109 @@ export default async function ServicioPage({ params }: { params: Promise<{ slug:
           <span style={{ fontSize: 14, color: "#888" }}>Foto del servicio</span>
         </div>
       </FadeIn>
+
+      {/* FOR WHOM + INCLUDES */}
+      <section style={{ paddingTop: 80, paddingBottom: 80 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, maxWidth: 1200, margin: "0 auto", padding: "0 40px" }}>
+          {/* Left: For whom */}
+          <FadeIn>
+            <div>
+              <p className="section-label" style={{ marginBottom: 16 }}>&iquest;Para qui&eacute;n es?</p>
+              <p style={{ fontSize: 18, lineHeight: 1.8, color: "var(--text-secondary)" }}>
+                {service.forWhom}
+              </p>
+            </div>
+          </FadeIn>
+
+          {/* Right: Includes */}
+          <FadeIn delay={0.15}>
+            <div>
+              <p className="section-label" style={{ marginBottom: 24 }}>&iquest;Qu&eacute; incluye?</p>
+              <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 16 }}>
+                {service.includes.map((item, i) => (
+                  <li key={i} style={{ display: "flex", gap: 12, fontSize: 16, lineHeight: 1.6, color: "var(--text-secondary)" }}>
+                    {CHECK_ICON}
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* PROCESS */}
+      <section style={{ background: "var(--cream)", padding: "80px 40px" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+          <FadeIn>
+            <p className="section-label" style={{ textAlign: "center" }}>&iquest;C&oacute;mo funciona?</p>
+            <h2 style={{ textAlign: "center", marginBottom: 60 }}>El proceso paso a paso</h2>
+          </FadeIn>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 32 }}>
+            {service.process.map((step, i) => (
+              <FadeIn key={i} delay={i * 0.1}>
+                <div style={{
+                  background: "white",
+                  borderRadius: 20,
+                  padding: "32px 28px",
+                  height: "100%",
+                  border: "1px solid var(--border)",
+                }}>
+                  <div style={{
+                    width: 44,
+                    height: 44,
+                    borderRadius: 12,
+                    background: `var(--${service.color}-bg, var(--cream))`,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontFamily: "var(--font-display)",
+                    fontWeight: 700,
+                    fontSize: 18,
+                    color: "var(--heading)",
+                    marginBottom: 20,
+                  }}>
+                    {String(i + 1).padStart(2, "0")}
+                  </div>
+                  <p style={{ fontSize: 15, lineHeight: 1.7, color: "var(--text-secondary)" }}>{step}</p>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      {service.faq.length > 0 && (
+        <section style={{ padding: "80px 40px" }}>
+          <div style={{ maxWidth: 800, margin: "0 auto" }}>
+            <FadeIn>
+              <p className="section-label" style={{ textAlign: "center" }}>Preguntas frecuentes</p>
+              <h2 style={{ textAlign: "center", marginBottom: 48 }}>Lo que las familias nos preguntan</h2>
+            </FadeIn>
+
+            <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
+              {service.faq.map((item, i) => (
+                <FadeIn key={i} delay={i * 0.1}>
+                  <div style={{
+                    background: "var(--cream)",
+                    borderRadius: 20,
+                    padding: "32px 36px",
+                  }}>
+                    <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 12, color: "var(--heading)" }}>
+                      {item.q}
+                    </h3>
+                    <p style={{ fontSize: 16, lineHeight: 1.75, color: "var(--text-secondary)", margin: 0 }}>
+                      {item.a}
+                    </p>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* OTHER SERVICES */}
       <section className="servicios" style={{ background: "var(--cream)" }}>
@@ -118,6 +229,16 @@ export default async function ServicioPage({ params }: { params: Promise<{ slug:
       </FadeIn>
 
       <Footer />
+
+      <style>{`
+        @media (max-width: 768px) {
+          section > div[style*="grid-template-columns: 1fr 1fr"] {
+            grid-template-columns: 1fr !important;
+            gap: 40px !important;
+            padding: 0 20px !important;
+          }
+        }
+      `}</style>
     </>
   );
 }
