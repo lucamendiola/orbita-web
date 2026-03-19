@@ -194,8 +194,8 @@ export default function Home() {
         <div className="atendemos-layout">
           <FadeIn delay={0.1}>
             <div className="atende-card">
-              <div className="atende-card-img" style={{ background: "rgba(163,180,162,0.1)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                <span style={{ fontSize: 13, color: "#888" }}>Foto</span>
+              <div className="atende-card-img" style={{ position: "relative" }}>
+                <Image src="/images/consulta-1.jpg" alt="Consulta con niña" fill style={{ objectFit: "cover" }} />
               </div>
               <div className="atende-card-body">
                 <h3>Crecemos con ellos desde el inicio</h3>
@@ -204,13 +204,13 @@ export default function Home() {
               <div className="atende-card-arc" />
             </div>
           </FadeIn>
-          <div className="atendemos-center" style={{ background: "linear-gradient(135deg, rgba(163,180,162,0.1), rgba(190,174,151,0.06))", display: "flex", alignItems: "center", justifyContent: "center" }}>
-            <span style={{ fontSize: 14, color: "#888" }}>Foto principal</span>
+          <div className="atendemos-center" style={{ position: "relative" }}>
+            <Image src="/images/consulta-center.jpg" alt="Terapia en Órbita" fill style={{ objectFit: "cover" }} />
           </div>
           <FadeIn delay={0.2}>
             <div className="atende-card">
-              <div className="atende-card-img" style={{ background: "rgba(161,155,227,0.1)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                <span style={{ fontSize: 13, color: "#888" }}>Foto</span>
+              <div className="atende-card-img" style={{ position: "relative" }}>
+                <Image src="/images/consulta-2.jpg" alt="Equipo especializado" fill style={{ objectFit: "cover" }} />
               </div>
               <div className="atende-card-body">
                 <h3>Especialistas en diversidad</h3>
@@ -221,8 +221,8 @@ export default function Home() {
           </FadeIn>
           <FadeIn delay={0.3}>
             <div className="atende-card">
-              <div className="atende-card-img" style={{ background: "rgba(251,166,73,0.1)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                <span style={{ fontSize: 13, color: "#888" }}>Foto</span>
+              <div className="atende-card-img" style={{ position: "relative" }}>
+                <Image src="/images/consulta-3.jpg" alt="Estimulación temprana" fill style={{ objectFit: "cover" }} />
               </div>
               <div className="atende-card-body">
                 <h3>Presente en cada etapa</h3>
@@ -233,8 +233,8 @@ export default function Home() {
           </FadeIn>
           <FadeIn delay={0.4}>
             <div className="atende-card">
-              <div className="atende-card-img" style={{ background: "rgba(102,220,196,0.1)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                <span style={{ fontSize: 13, color: "#888" }}>Foto</span>
+              <div className="atende-card-img" style={{ position: "relative" }}>
+                <Image src="/images/atendemos-3.png" alt="Retos únicos" fill style={{ objectFit: "cover" }} />
               </div>
               <div className="atende-card-body">
                 <h3>Respuesta a sus retos &uacute;nicos</h3>
