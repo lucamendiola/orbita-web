@@ -395,8 +395,12 @@ export default function Home() {
             return (
               <StaggerItem key={post.slug}>
                 <Link href={`/blog/${post.slug}`} className="blog-card">
-                  <div className="blog-card-img" style={{ background: bg, display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <span style={{ fontSize: 13, color: bg === "var(--teal)" ? "rgba(255,255,255,.5)" : "#888" }}>Imagen</span>
+                  <div className="blog-card-img" style={{ background: bg, display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
+                    {post.coverImage ? (
+                      <img src={post.coverImage} alt={post.coverImageAlt || post.title} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    ) : (
+                      <span style={{ fontSize: 13, color: bg === "var(--teal)" ? "rgba(255,255,255,.5)" : "#888" }}>Imagen</span>
+                    )}
                   </div>
                   <div className="blog-card-body">
                     <p className="blog-card-meta">{post.tags[0]}</p>
