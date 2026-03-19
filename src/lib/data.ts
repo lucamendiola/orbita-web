@@ -153,6 +153,16 @@ export const DOCTORS: Doctor[] = [
     bio: "Psic\u00f3loga cl\u00ednica con enfoque en regulaci\u00f3n emocional, ansiedad infantil y acompa\u00f1amiento a familias durante el proceso diagn\u00f3stico.",
     specialties: ["Regulaci\u00f3n emocional", "Ansiedad", "Terapia familiar", "Autoestima"],
   },
+  {
+    slug: "lic-nora-martinez",
+    initials: "NM",
+    name: "Lic. Nora Mart\u00ednez",
+    role: "Psicoterapia Breve Sist\u00e9mica",
+    color: "yellow",
+    photo: "/team/lic-martinez.png",
+    bio: "Psic\u00f3loga por la UDEM con Maestr\u00eda en Psicoterapia Breve Sist\u00e9mica. M\u00e1s de una d\u00e9cada de experiencia cl\u00ednica en psicoterapia y evaluaci\u00f3n diagn\u00f3stica en contextos escolares y de desarrollo. Terapeuta en programas de estimulaci\u00f3n del desarrollo y docente en colegios privados, con certificaciones en DIR/Floortime, neurociencias y terapias basadas en evidencia. Su pr\u00e1ctica se centra en ofrecer estrategias efectivas y humanas para ni\u00f1os y familias.",
+    specialties: ["Psicoterapia Breve Sist\u00e9mica", "DIR/Floortime", "Evaluaci\u00f3n diagn\u00f3stica", "Estimulaci\u00f3n del desarrollo"],
+  },
 ];
 
 /* ─── WHATSAPP ─── */
