@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const WA_ICON = (
@@ -33,11 +34,14 @@ export default function Nav({ activePage }: NavProps) {
     <>
       <nav>
         <Link href="/" className="nav-logo">
-          <div className="nav-logo-icon" />
-          <div>
-            <span className="nav-logo-text">&oacute;rbita</span>
-            <span className="nav-logo-sub">centro de neurodesarrollo</span>
-          </div>
+          <Image
+            src="/brand/logo-dark.png"
+            alt="Órbita Centro de Neurodesarrollo"
+            width={160}
+            height={40}
+            priority
+            style={{ height: 36, width: "auto" }}
+          />
         </Link>
 
         <ul className="nav-links nav-links-desktop">

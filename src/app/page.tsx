@@ -4,6 +4,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
 import StaggerChildren, { StaggerItem } from "@/components/StaggerChildren";
+import { DOCTORS } from "@/lib/data";
 
 const WA_URL =
   "https://wa.me/528182751125?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita";
@@ -284,27 +285,22 @@ export default function Home() {
           </div>
         </FadeIn>
         <StaggerChildren className="equipo-grid" staggerDelay={0.12}>
-          {[
-            { initials: "JL", name: "Dr. Juan Francisco Lozano", role: "Pediatr\u00eda del Desarrollo" },
-            { initials: "MJ", name: "Dra. Mar\u00eda Jos\u00e9 Delgado", role: "Pediatra \u00b7 S\u00edndrome de Down" },
-            { initials: "SG", name: "Dra. Sof\u00eda Garc\u00eda", role: "Terapia Conductual" },
-            { initials: "DP", name: "Lic. Daniela P\u00e1ez", role: "Terapia de Lenguaje" },
-          ].map((d) => (
-            <StaggerItem key={d.initials}>
-              <div className="doc">
-                <div className="doc-pill">
-                  <span className="doc-initials" style={{ fontFamily: "var(--font-serif), 'EB Garamond', serif", fontSize: 56, fontWeight: 600, color: "rgba(255,255,255,0.5)" }}>
-                    {d.initials}
-                  </span>
-                  <div className="doc-overlay">
-                    <h3>{d.name}</h3>
-                    <p>{d.role}</p>
+          {DOCTORS.slice(0, 4).map((d) => (
+            <StaggerItem key={d.slug}>
+              <Link href={`/equipo/${d.slug}`} style={{ textDecoration: "none", color: "inherit" }}>
+                <div className="doc">
+                  <div className="doc-pill">
+                    <Image src={d.photo} alt={d.name} fill style={{ objectFit: "cover", objectPosition: "top" }} />
+                    <div className="doc-overlay">
+                      <h3>{d.name}</h3>
+                      <p>{d.role}</p>
+                    </div>
                   </div>
+                  <p className="doc-name">{d.name}</p>
+                  <p className="doc-role">{d.role}</p>
+                  <a href="tel:8182751125" className="doc-phone">{PHONE_ICON}</a>
                 </div>
-                <p className="doc-name">{d.name}</p>
-                <p className="doc-role">{d.role}</p>
-                <a href="tel:8182751125" className="doc-phone">{PHONE_ICON}</a>
-              </div>
+              </Link>
             </StaggerItem>
           ))}
         </StaggerChildren>

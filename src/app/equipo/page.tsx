@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -56,9 +57,7 @@ export default function Equipo() {
               <Link href={`/equipo/${d.slug}`} style={{ textDecoration: "none", color: "inherit" }}>
                 <div className="doc">
                   <div className="doc-pill" style={{ background: COLOR_MAP[d.color] || "var(--sage)" }}>
-                    <span style={{ fontFamily: "var(--font-serif), 'EB Garamond', serif", fontSize: 56, fontWeight: 600, color: "rgba(255,255,255,0.5)" }}>
-                      {d.initials}
-                    </span>
+                    <Image src={d.photo} alt={d.name} fill style={{ objectFit: "cover", objectPosition: "top" }} />
                     <div className="doc-overlay">
                       <h3>{d.name}</h3>
                       <p>{d.role}</p>

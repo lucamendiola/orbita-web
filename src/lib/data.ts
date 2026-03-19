@@ -96,7 +96,8 @@ export interface Doctor {
   initials: string;
   name: string;
   role: string;
-  color: string; // lavender | coral | teal-light | orange | sky | lime
+  color: string;
+  photo: string;
   bio: string;
   specialties: string[];
 }
@@ -108,6 +109,7 @@ export const DOCTORS: Doctor[] = [
     name: "Dr. Juan Francisco Lozano",
     role: "Pediatr\u00eda del Desarrollo y Comportamiento",
     color: "lavender",
+    photo: "/team/dr-lozano.png",
     bio: "Pediatra especialista en desarrollo y comportamiento infantil. Formado en TecSalud con experiencia en evaluaci\u00f3n y seguimiento del neurodesarrollo.",
     specialties: ["Evaluaci\u00f3n del desarrollo", "TDAH", "TEA", "Retrasos del desarrollo"],
   },
@@ -117,6 +119,7 @@ export const DOCTORS: Doctor[] = [
     name: "Dra. Mar\u00eda Jos\u00e9 Delgado",
     role: "Pediatra \u00b7 Alta Especialidad en S\u00edndrome de Down",
     color: "coral",
+    photo: "/team/dra-delgado.png",
     bio: "Pediatra con alta especialidad en S\u00edndrome de Down. Acompa\u00f1a a familias desde el diagn\u00f3stico con un enfoque integral y basado en evidencia.",
     specialties: ["S\u00edndrome de Down", "Pediatr\u00eda general", "Seguimiento integral"],
   },
@@ -126,6 +129,7 @@ export const DOCTORS: Doctor[] = [
     name: "Dra. Sof\u00eda Garc\u00eda",
     role: "Terapia Conductual \u00b7 Analista de Conducta",
     color: "teal-light",
+    photo: "/team/dra-garcia.png",
     bio: "Analista de conducta certificada. Especialista en An\u00e1lisis Conductual Aplicado (ABA) para el desarrollo de habilidades adaptativas.",
     specialties: ["ABA", "Habilidades adaptativas", "Manejo conductual", "Habilidades sociales"],
   },
@@ -135,6 +139,7 @@ export const DOCTORS: Doctor[] = [
     name: "Lic. Daniela P\u00e1ez",
     role: "Terapia de Lenguaje",
     color: "orange",
+    photo: "/team/lic-paez.png",
     bio: "Terapeuta de lenguaje especializada en trastornos de comunicaci\u00f3n, habla y lenguaje en poblaci\u00f3n infantil y adolescente.",
     specialties: ["Trastornos del lenguaje", "Tartamudeo", "Comunicaci\u00f3n aumentativa", "Fonoaudiolog\u00eda"],
   },
@@ -144,6 +149,7 @@ export const DOCTORS: Doctor[] = [
     name: "Lic. Rebeca Zepeda",
     role: "Psicolog\u00eda Cl\u00ednica",
     color: "sky",
+    photo: "/team/lic-zepeda.png",
     bio: "Psic\u00f3loga cl\u00ednica con enfoque en regulaci\u00f3n emocional, ansiedad infantil y acompa\u00f1amiento a familias durante el proceso diagn\u00f3stico.",
     specialties: ["Regulaci\u00f3n emocional", "Ansiedad", "Terapia familiar", "Autoestima"],
   },

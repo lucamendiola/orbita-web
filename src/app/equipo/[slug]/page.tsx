@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
@@ -53,14 +54,11 @@ export default async function DoctorPage({ params }: { params: Promise<{ slug: s
                 aspectRatio: "3/4",
                 borderRadius: 140,
                 background: COLOR_MAP[doctor.color] || "var(--sage)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
+                position: "relative",
+                overflow: "hidden",
               }}
             >
-              <span style={{ fontFamily: "var(--font-serif), 'EB Garamond', serif", fontSize: 72, fontWeight: 600, color: "rgba(255,255,255,0.5)" }}>
-                {doctor.initials}
-              </span>
+              <Image src={doctor.photo} alt={doctor.name} fill style={{ objectFit: "cover", objectPosition: "top" }} />
             </div>
           </FadeIn>
           <FadeIn direction="right" delay={0.15}>
@@ -99,9 +97,7 @@ export default async function DoctorPage({ params }: { params: Promise<{ slug: s
             <Link key={d.slug} href={`/equipo/${d.slug}`} style={{ textDecoration: "none", color: "inherit" }}>
               <div className="doc">
                 <div className="doc-pill" style={{ background: COLOR_MAP[d.color] || "var(--sage)" }}>
-                  <span style={{ fontFamily: "var(--font-serif), 'EB Garamond', serif", fontSize: 56, fontWeight: 600, color: "rgba(255,255,255,0.5)" }}>
-                    {d.initials}
-                  </span>
+                  <Image src={d.photo} alt={d.name} fill style={{ objectFit: "cover", objectPosition: "top" }} />
                   <div className="doc-overlay">
                     <h3>{d.name}</h3>
                     <p>{d.role}</p>
