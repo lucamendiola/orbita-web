@@ -64,12 +64,19 @@ export default async function ServicioPage({ params }: { params: Promise<{ slug:
           margin: "60px 80px 0",
           height: 420,
           borderRadius: 24,
-          background: `var(--${service.color}-bg, var(--cream))`,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
+          overflow: "hidden",
+          position: "relative",
         }}>
-          <span style={{ fontSize: 14, color: "#888" }}>Foto del servicio</span>
+          <img
+            src={service.image}
+            alt={service.title}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              display: "block",
+            }}
+          />
         </div>
       </FadeIn>
 
@@ -190,8 +197,8 @@ export default async function ServicioPage({ params }: { params: Promise<{ slug:
         <div className="servicios-grid">
           {others.map((s) => (
             <Link key={s.slug} href={`/servicios/${s.slug}`} className={`srv-card srv--${s.color}`}>
-              <div className="srv-img" style={{ background: "rgba(0,0,0,0.03)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                <span style={{ fontSize: 13, color: "#888" }}>Foto</span>
+              <div className="srv-img" style={{ overflow: "hidden" }}>
+                <img src={s.image} alt={s.title} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
               </div>
               <div className="srv-info">
                 <span className="srv-arrow">&nearr;</span>

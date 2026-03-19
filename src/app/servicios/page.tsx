@@ -36,16 +36,12 @@ export default function Servicios() {
           {SERVICES.map((s) => (
             <StaggerItem key={s.slug}>
               <Link href={`/servicios/${s.slug}`} className={`srv-card srv--${s.color}`}>
-                <div
-                  className="srv-img"
-                  style={{
-                    background: "rgba(0,0,0,0.03)",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <span style={{ fontSize: 13, color: "#888" }}>Foto</span>
+                <div className="srv-img" style={{ overflow: "hidden" }}>
+                  <img
+                    src={s.image}
+                    alt={s.title}
+                    style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+                  />
                 </div>
                 <div className="srv-info">
                   <span className="srv-arrow">&nearr;</span>

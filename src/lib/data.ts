@@ -4,6 +4,7 @@ export interface Service {
   title: string;
   desc: string;
   color: string;
+  image: string;
   longDesc: string;
   forWhom: string;
   includes: string[];
@@ -17,6 +18,7 @@ export const SERVICES: Service[] = [
     title: "Pediatr\u00eda del desarrollo y comportamiento",
     desc: "Evaluaci\u00f3n y seguimiento del desarrollo infantil.",
     color: "yellow",
+    image: "/services/pediatria-desarrollo.jpg",
     longDesc:
       "Cuando algo en el desarrollo de tu hijo te genera dudas, el primer paso es una evaluaci\u00f3n con alguien que realmente entienda de neurodesarrollo. Nuestros pediatras del desarrollo no solo revisan hitos: observan c\u00f3mo se comunica, c\u00f3mo juega, c\u00f3mo interact\u00faa. A partir de ah\u00ed, dise\u00f1an un plan que conecta todas las \u00e1reas que tu hijo necesita, coordinando con el resto del equipo de \u00d3rbita para que nada quede suelto.",
     forWhom: "Familias que notan algo diferente en el desarrollo de su hijo y buscan una evaluaci\u00f3n completa. Tambi\u00e9n para quienes ya tienen un diagn\u00f3stico y necesitan un plan de seguimiento estructurado.",
@@ -45,6 +47,7 @@ export const SERVICES: Service[] = [
     title: "Neurolog\u00eda pedi\u00e1trica",
     desc: "Atenci\u00f3n de trastornos neurol\u00f3gicos infantiles.",
     color: "sky",
+    image: "/services/neurologia-pediatrica.jpg",
     longDesc:
       "El cerebro de un ni\u00f1o est\u00e1 en constante desarrollo, y cuando aparecen se\u00f1ales como convulsiones, dolores de cabeza frecuentes o movimientos involuntarios, es momento de buscar a un especialista. En \u00d3rbita, la neurolog\u00eda pedi\u00e1trica trabaja de la mano con el resto del equipo para entender qu\u00e9 est\u00e1 pasando y trazar un camino claro.",
     forWhom: "Ni\u00f1os y adolescentes con s\u00edntomas neurol\u00f3gicos como convulsiones, cefaleas, tics, trastornos del movimiento, o que necesitan seguimiento por condiciones como epilepsia.",
@@ -72,6 +75,7 @@ export const SERVICES: Service[] = [
     title: "Psicopedagog\u00eda",
     desc: "Apoyo al aprendizaje y estrategias escolares.",
     color: "lime",
+    image: "/services/psicopedagogia.jpg",
     longDesc:
       "Cuando tu hijo batalla en la escuela, la respuesta no siempre est\u00e1 en estudiar m\u00e1s. A veces hay una dificultad espec\u00edfica de aprendizaje que nadie ha identificado. Nuestro equipo de psicopedagog\u00eda eval\u00faa c\u00f3mo aprende tu hijo, detecta qu\u00e9 le est\u00e1 costando y por qu\u00e9, y dise\u00f1a estrategias que funcionan tanto en casa como en el sal\u00f3n de clases.",
     forWhom: "Ni\u00f1os y adolescentes con dificultades escolares: bajo rendimiento, problemas de atenci\u00f3n en clase, rechazo a la escuela, o sospecha de dislexia, disgraf\u00eda o discalculia.",
@@ -99,6 +103,7 @@ export const SERVICES: Service[] = [
     title: "Psiquiatr\u00eda infantil",
     desc: "Salud mental en ni\u00f1os y adolescentes.",
     color: "teal",
+    image: "/services/psiquiatria-infantil.jpg",
     longDesc:
       "La salud mental de un ni\u00f1o merece la misma atenci\u00f3n que su salud f\u00edsica. Cuando la ansiedad, los cambios de humor o las dificultades emocionales empiezan a afectar su d\u00eda a d\u00eda, un psiquiatra infantil puede evaluar si existe una condici\u00f3n que requiere tratamiento. En \u00d3rbita, la medicaci\u00f3n nunca es el primer recurso: siempre es parte de un plan integral.",
     forWhom: "Ni\u00f1os y adolescentes con ansiedad intensa, cambios de humor marcados, dificultades para dormir, irritabilidad persistente, o que ya tienen un diagn\u00f3stico psiqui\u00e1trico y necesitan seguimiento.",
@@ -126,6 +131,7 @@ export const SERVICES: Service[] = [
     title: "Terapia conductual",
     desc: "Intervenci\u00f3n en habilidades adaptativas y de comportamiento.",
     color: "lavender",
+    image: "/services/terapia-conductual.jpg",
     longDesc:
       "Cada ni\u00f1o aprende a su ritmo, pero a veces necesita un empuj\u00f3n estructurado para desarrollar habilidades que otros adquieren de forma natural. La terapia conductual en \u00d3rbita usa el An\u00e1lisis Conductual Aplicado (ABA) para ense\u00f1ar habilidades nuevas, reducir conductas que le complican la vida y ayudar a que tu hijo pueda participar m\u00e1s en su entorno.",
     forWhom: "Ni\u00f1os con TEA, retrasos en habilidades adaptativas, conductas desafiantes que afectan la convivencia, o que necesitan apoyo para desarrollar independencia en actividades cotidianas.",
@@ -153,6 +159,7 @@ export const SERVICES: Service[] = [
     title: "Terapia f\u00edsica, ocupacional y lenguaje",
     desc: "Intervenciones motoras, sensoriomotoras y de comunicaci\u00f3n.",
     color: "coral",
+    image: "/services/terapia-fisica-ocupacional-lenguaje.jpg",
     longDesc:
       "Moverse, sentir, comunicarse: son las bases sobre las que un ni\u00f1o construye su independencia. Cuando alguna de estas \u00e1reas necesita apoyo, nuestro equipo de terapeutas trabaja de forma integrada para que tu hijo pueda participar en su mundo con mayor facilidad. No son tres terapias separadas: es un equipo que se habla, se coordina y comparte un mismo plan.",
     forWhom: "Ni\u00f1os con retrasos en el movimiento, dificultades para hablar o comunicarse, problemas de procesamiento sensorial, dificultades de alimentaci\u00f3n, o que necesitan rehabilitaci\u00f3n f\u00edsica.",
@@ -180,6 +187,7 @@ export const SERVICES: Service[] = [
     title: "Neuropsicolog\u00eda",
     desc: "Evaluaci\u00f3n cognitiva y perfil de fortalezas.",
     color: "coral",
+    image: "/services/neuropsicologia.jpg",
     longDesc:
       "Entender c\u00f3mo funciona la mente de tu hijo es el primer paso para ayudarlo mejor. Una evaluaci\u00f3n neuropsicol\u00f3gica revela su perfil cognitivo: d\u00f3nde est\u00e1n sus fortalezas, qu\u00e9 le cuesta m\u00e1s, c\u00f3mo procesa la informaci\u00f3n. Con esa claridad, el equipo puede dise\u00f1ar intervenciones que realmente le funcionen.",
     forWhom: "Ni\u00f1os y adolescentes que necesitan una evaluaci\u00f3n profunda de sus capacidades cognitivas, ya sea para complementar un diagn\u00f3stico, para entender dificultades acad\u00e9micas, o para identificar altas capacidades.",
@@ -207,6 +215,7 @@ export const SERVICES: Service[] = [
     title: "Psicolog\u00eda cl\u00ednica",
     desc: "Evaluaci\u00f3n y tratamiento emocional y conductual.",
     color: "yellow",
+    image: "/services/psicologia-clinica.jpg",
     longDesc:
       "Las emociones de un ni\u00f1o no siempre se expresan con palabras. A veces se manifiestan en berrinches que no ceden, miedos que crecen, o un retraimiento que preocupa. La psicolog\u00eda cl\u00ednica en \u00d3rbita ofrece un espacio seguro donde tu hijo puede procesar lo que siente, mientras la familia recibe herramientas para acompa\u00f1arlo mejor.",
     forWhom: "Ni\u00f1os y adolescentes con ansiedad, miedos, baja autoestima, dificultades sociales, duelo, o que est\u00e1n atravesando el proceso emocional de un diagn\u00f3stico de neurodesarrollo.",
@@ -234,6 +243,7 @@ export const SERVICES: Service[] = [
     title: "Medicina de rehabilitaci\u00f3n",
     desc: "Recuperaci\u00f3n funcional y motriz.",
     color: "lavender",
+    image: "/services/medicina-rehabilitacion.jpg",
     longDesc:
       "Cuando un ni\u00f1o enfrenta una condici\u00f3n que limita su movimiento o su independencia f\u00edsica, la medicina de rehabilitaci\u00f3n ofrece un camino para recuperar funci\u00f3n y ganar autonom\u00eda. Nuestro especialista eval\u00faa las capacidades actuales y dise\u00f1a un programa que trabaja con lo que tu hijo s\u00ed puede hacer para llevarlo m\u00e1s lejos.",
     forWhom: "Ni\u00f1os con condiciones que afectan la movilidad, la postura o la independencia f\u00edsica: par\u00e1lisis cerebral, lesiones musculoesquel\u00e9ticas, condiciones gen\u00e9ticas con componente motor, o post-operatorios.",
@@ -261,6 +271,7 @@ export const SERVICES: Service[] = [
     title: "Terapia de neurodesarrollo",
     desc: "Adquisici\u00f3n y fortalecimiento de hitos del desarrollo.",
     color: "lime",
+    image: "/services/terapia-neurodesarrollo.jpg",
     longDesc:
       "Los primeros a\u00f1os son una ventana de oportunidad \u00fanica. Si tu beb\u00e9 o ni\u00f1o peque\u00f1o est\u00e1 tardando en sostener la cabeza, sentarse, gatear o caminar, la intervenci\u00f3n temprana puede hacer una diferencia enorme. La terapia de neurodesarrollo trabaja con el cerebro en su momento de mayor plasticidad para estimular y fortalecer los hitos que tu hijo necesita alcanzar.",
     forWhom: "Beb\u00e9s y ni\u00f1os peque\u00f1os (0 a 5 a\u00f1os) con retrasos en hitos del desarrollo motor, prematuros, o con condiciones que afectan el desarrollo temprano.",
