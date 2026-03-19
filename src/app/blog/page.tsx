@@ -57,7 +57,15 @@ export default function Blog() {
                     <span className="blog-m-date">{dateFormatted}</span>
                   </div>
                   <div className="blog-index-card-img">
-                    <span style={{ fontSize: 14, color: "#888" }}>Imagen</span>
+                    {post.coverImage ? (
+                      <img
+                        src={post.coverImage}
+                        alt={post.coverImageAlt || post.title}
+                        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                      />
+                    ) : (
+                      <span style={{ fontSize: 14, color: "#888" }}>Imagen</span>
+                    )}
                   </div>
                 </Link>
               </StaggerItem>

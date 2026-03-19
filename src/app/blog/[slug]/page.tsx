@@ -43,7 +43,15 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         {/* Cover image */}
         <FadeIn delay={0.15}>
           <div className="blog-post-cover">
-            <span style={{ fontSize: 14, color: "#888" }}>Imagen del art&iacute;culo</span>
+            {post.coverImage ? (
+              <img
+                src={post.coverImage}
+                alt={post.coverImageAlt || post.title}
+                style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "inherit" }}
+              />
+            ) : (
+              <span style={{ fontSize: 14, color: "#888" }}>Imagen del art&iacute;culo</span>
+            )}
           </div>
         </FadeIn>
 
