@@ -89,8 +89,8 @@ export default function Home() {
         <FadeIn direction="right" delay={0.3}>
           <div className="hero-visual">
             <div className="hero-blob" />
-            <div className="hero-img" style={{ background: "linear-gradient(135deg, rgba(163,180,162,0.15), rgba(190,174,151,0.1))", display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <span style={{ fontSize: 14, color: "#888" }}>Foto</span>
+            <div className="hero-img">
+              <Image src="/images/hero-child.png" alt="Niña jugando con bloques de colores" fill style={{ objectFit: "contain", objectPosition: "center bottom" }} priority />
             </div>
             <div className="sparkle" style={{ top: 30, right: 60, width: 18, height: 18 }} />
             <div className="sparkle" style={{ bottom: 100, right: 20, width: 12, height: 12, opacity: 0.3 }} />
