@@ -107,10 +107,10 @@ export const DOCTORS: Doctor[] = [
     slug: "dr-juan-francisco-lozano",
     initials: "JL",
     name: "Dr. Juan Francisco Lozano",
-    role: "Pediatr\u00eda del Desarrollo y Comportamiento",
+    role: "Pediatra del desarrollo y comportamiento",
     color: "lavender",
     photo: "/team/dr-lozano.png",
-    bio: "Pediatra especialista en desarrollo y comportamiento infantil. Formado en TecSalud con experiencia en evaluaci\u00f3n y seguimiento del neurodesarrollo.",
+    bio: "M\u00e9dico cirujano egresado del Tecnol\u00f3gico de Monterrey y maestro en Ciencias en Investigaci\u00f3n Cl\u00ednica por Northwestern University en Chicago, IL. Realiz\u00f3 su residencia en Pediatr\u00eda en el Children\u2019s Hospital of Michigan en Detroit, y posteriormente su subespecialidad en Pediatr\u00eda del Desarrollo y Comportamiento en Nationwide Children\u2019s Hospital en Columbus, OH. Es miembro de diversas sociedades m\u00e9dicas en M\u00e9xico y Estados Unidos, adem\u00e1s de desempe\u00f1arse como profesor e investigador en el Tec de Monterrey. Su pr\u00e1ctica cl\u00ednica se centra en brindar atenci\u00f3n integral y basada en evidencia a ni\u00f1os y adolescentes con trastornos del neurodesarrollo.",
     specialties: ["Evaluaci\u00f3n del desarrollo", "TDAH", "TEA", "Retrasos del desarrollo"],
   },
   {
