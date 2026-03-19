@@ -126,50 +126,95 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ═══ BENTO GRID ═══ */}
-      <section className="bento-section">
-        <div className="bento-header">
+      {/* ═══ ORBIT SECTION ═══ */}
+      <section className="orbit-section">
+        <div className="orbit-text">
           <FadeIn>
             <h2>Tu hijo al centro.<br />Todo lo dem&aacute;s, en &oacute;rbita.</h2>
           </FadeIn>
-          <FadeIn delay={0.15}>
-            <p>No somos consultorios separados. Somos un ecosistema donde cada especialista conoce a tu hijo y trabaja en el mismo plan.</p>
+          <FadeIn delay={0.1}>
+            <p>
+              No somos consultorios separados. Somos un ecosistema donde cada especialista
+              conoce a tu hijo y trabaja en el mismo plan.
+            </p>
           </FadeIn>
-        </div>
-        <div className="bento">
-          <FadeIn className="bento-item bento-main">
-            <div className="orbit-visual">
-              <div className="orbit-ring">
-                <div className="orbit-dot" style={{ top: 0, left: "50%", transform: "translateX(-50%)", background: "var(--lime)", width: 10, height: 10 }} />
-              </div>
-              <div className="orbit-ring">
-                <div className="orbit-dot" style={{ bottom: 0, right: 0, background: "var(--lavender)", width: 8, height: 8 }} />
-              </div>
-              <div className="orbit-ring">
-                <div className="orbit-dot" style={{ top: "50%", left: 0, background: "var(--coral)", width: 6, height: 6 }} />
-              </div>
-              <div className="orbit-center" />
+          <FadeIn delay={0.2}>
+            <div className="orbit-values">
+              <span className="orbit-val"><span className="orbit-val-dot" style={{ background: "var(--sage)" }} /> Integridad</span>
+              <span className="orbit-val"><span className="orbit-val-dot" style={{ background: "var(--lavender)" }} /> Innovaci&oacute;n</span>
+              <span className="orbit-val"><span className="orbit-val-dot" style={{ background: "var(--coral)" }} /> Inclusi&oacute;n</span>
             </div>
-            <h2>Enfoque transdisciplinario</h2>
-            <p>Medicina, terapia y psicolog&iacute;a conectadas en un plan &uacute;nico. Nada aislado. Todo alrededor de tu hijo.</p>
           </FadeIn>
-          <FadeIn className="bento-item bento-stat" delay={0.1}>
-            <div className="bento-stat-num">98%</div>
-            <div className="bento-stat-label">Satisfacci&oacute;n<br />de nuestras familias</div>
-          </FadeIn>
-          <FadeIn className="bento-item bento-image" delay={0.2}>
-            <Image src="/images/consulta-center.jpg" alt="Terapia" fill style={{ objectFit: "cover" }} />
-          </FadeIn>
-          <FadeIn className="bento-item bento-values" delay={0.15}>
-            <div className="bento-value"><span className="bento-value-dot" style={{ background: "var(--sage)" }} /> Integridad</div>
-            <div className="bento-value"><span className="bento-value-dot" style={{ background: "var(--lavender)" }} /> Innovaci&oacute;n</div>
-            <div className="bento-value"><span className="bento-value-dot" style={{ background: "var(--coral)" }} /> Inclusi&oacute;n</div>
-          </FadeIn>
-          <FadeIn className="bento-item bento-quote" delay={0.2}>
-            <blockquote>&ldquo;En &Oacute;rbita, el centro eres t&uacute;. No vemos l&iacute;mites, vemos procesos. Acompa&ntilde;amos historias, no etiquetas.&rdquo;</blockquote>
+          <FadeIn delay={0.3}>
+            <div className="orbit-stat">
+              <span className="orbit-stat-num">98%</span>
+              <span className="orbit-stat-label">Satisfacci&oacute;n de nuestras familias</span>
+            </div>
           </FadeIn>
         </div>
+
+        <FadeIn delay={0.2}>
+          <div className="orbit-container">
+            {/* Static ring backgrounds */}
+            <div className="orbit-ring-bg ring-bg-1" />
+            <div className="orbit-ring-bg ring-bg-2" />
+            <div className="orbit-ring-bg ring-bg-3" />
+
+            {/* Center */}
+            <div className="orbit-center">
+              <span className="orbit-center-icon">&#9825;</span>
+              <span className="orbit-center-label">Tu hijo</span>
+            </div>
+
+            {/* Track 1: Outer (4 nodes) */}
+            <div className="orbit-track track-1">
+              <div className="orbit-node-anchor anchor-0">
+                <div className="orbit-node"><span className="node-dot" style={{ background: "var(--sky)" }} />Pediatr&iacute;a del desarrollo</div>
+              </div>
+              <div className="orbit-node-anchor anchor-1">
+                <div className="orbit-node"><span className="node-dot" style={{ background: "var(--coral)" }} />Terapia conductual</div>
+              </div>
+              <div className="orbit-node-anchor anchor-2">
+                <div className="orbit-node"><span className="node-dot" style={{ background: "var(--lime)" }} />Psicopedagog&iacute;a</div>
+              </div>
+              <div className="orbit-node-anchor anchor-3">
+                <div className="orbit-node"><span className="node-dot" style={{ background: "var(--orange)" }} />Terapia de lenguaje</div>
+              </div>
+              <div className="deco-dot" style={{ width: 8, height: 8, background: "var(--lime)", opacity: 0.4, top: "25%", left: "2%" }} />
+              <div className="deco-dot" style={{ width: 5, height: 5, background: "var(--sky)", opacity: 0.3, bottom: "20%", right: "8%" }} />
+            </div>
+
+            {/* Track 2: Middle (2 nodes, reverse) */}
+            <div className="orbit-track track-2">
+              <div className="orbit-node-anchor anchor-0">
+                <div className="orbit-node"><span className="node-dot" style={{ background: "var(--lavender)" }} />Neurolog&iacute;a pedi&aacute;trica</div>
+              </div>
+              <div className="orbit-node-anchor anchor-1">
+                <div className="orbit-node"><span className="node-dot" style={{ background: "var(--teal-light)" }} />Psiquiatr&iacute;a infantil</div>
+              </div>
+              <div className="deco-dot" style={{ width: 6, height: 6, background: "var(--lavender)", opacity: 0.35, top: "10%", right: "20%" }} />
+            </div>
+
+            {/* Track 3: Inner (2 nodes) */}
+            <div className="orbit-track track-3">
+              <div className="orbit-node-anchor anchor-0">
+                <div className="orbit-node"><span className="node-dot" style={{ background: "var(--sage)" }} />Neuropsicolog&iacute;a</div>
+              </div>
+              <div className="orbit-node-anchor anchor-1">
+                <div className="orbit-node"><span className="node-dot" style={{ background: "var(--coral)" }} />Psicolog&iacute;a cl&iacute;nica</div>
+              </div>
+              <div className="deco-dot" style={{ width: 4, height: 4, background: "var(--orange)", opacity: 0.3, bottom: "30%", left: "25%" }} />
+            </div>
+          </div>
+        </FadeIn>
       </section>
+
+      {/* Quote bar */}
+      <div className="quote-bar">
+        <FadeIn>
+          <blockquote>&ldquo;En &Oacute;rbita, el centro eres t&uacute;. No vemos l&iacute;mites, vemos procesos. Acompa&ntilde;amos historias, no etiquetas.&rdquo;</blockquote>
+        </FadeIn>
+      </div>
 
       {/* ═══ PROCESO ═══ */}
       <section className="proceso">
