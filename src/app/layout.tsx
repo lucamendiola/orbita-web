@@ -21,7 +21,11 @@ export const metadata: Metadata = {
   description:
     "Centro transdisciplinario en Monterrey. Integramos medicina, psicología y terapias basadas en evidencia para acompañar a niños y adolescentes en cada etapa de su desarrollo.",
   icons: {
-    icon: [{ url: "/favicon.png", sizes: "32x32", type: "image/png" }],
+    icon: [
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.png", sizes: "any", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
   openGraph: {
     title: "Órbita Centro de Neurodesarrollo",
