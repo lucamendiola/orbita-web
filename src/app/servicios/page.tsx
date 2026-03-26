@@ -230,9 +230,7 @@ export default function Servicios() {
                   justifyContent: "center",
                 }}
               >
-                <span style={{ fontSize: 14, color: "#888", marginBottom: 20 }}>
-                  Foto del equipo
-                </span>
+                <img src="/images/team-fadein.png" alt="Equipo Órbita" style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "bottom" }} />
               </div>
             </div>
           </div>

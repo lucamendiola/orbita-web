@@ -369,7 +369,7 @@ export default function Home() {
             <div className="cta-banner-visual">
               <div className="cta-blob" />
               <div style={{ position: "relative", zIndex: 1, width: "100%", height: "100%" }}>
-                <Image src="/images/team-3.png" alt="Equipo" fill style={{ objectFit: "contain", objectPosition: "bottom" }} />
+                <Image src="/images/team-fadein.png" alt="Equipo Órbita" fill style={{ objectFit: "contain", objectPosition: "bottom" }} />
               </div>
             </div>
           </div>

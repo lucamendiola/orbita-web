@@ -71,13 +71,11 @@ export default function Nosotros() {
               style={{
                 height: 300,
                 borderRadius: 20,
-                background: "linear-gradient(135deg, rgba(161,155,227,0.1), rgba(190,174,151,0.06))",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
+                overflow: "hidden",
+                position: "relative",
               }}
             >
-              <span style={{ fontSize: 13, color: "#888" }}>Foto terapia</span>
+              <Image src="/images/consulta-1.jpg" alt="Sesión de terapia en Órbita" fill style={{ objectFit: "cover" }} />
             </div>
           </FadeIn>
         </div>
@@ -89,13 +87,11 @@ export default function Nosotros() {
               style={{
                 height: 360,
                 borderRadius: 20,
-                background: "linear-gradient(135deg, rgba(163,180,162,0.1), rgba(102,220,196,0.06))",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
+                overflow: "hidden",
+                position: "relative",
               }}
             >
-              <span style={{ fontSize: 13, color: "#888" }}>Foto consulta</span>
+              <Image src="/images/consulta-2.jpg" alt="Consulta médica en Órbita" fill style={{ objectFit: "cover" }} />
             </div>
           </FadeIn>
           <FadeIn direction="right" delay={0.2}>
@@ -191,7 +187,7 @@ export default function Nosotros() {
             <div className="cta-banner-visual">
               <div className="cta-blob" />
               <div style={{ position: "relative", zIndex: 1, width: "100%", height: 280, display: "flex", alignItems: "flex-end", justifyContent: "center" }}>
-                <span style={{ fontSize: 14, color: "#888", marginBottom: 20 }}>Foto del equipo</span>
+                <Image src="/images/team-fadein.png" alt="Equipo Órbita" width={400} height={280} style={{ objectFit: "contain", objectPosition: "bottom" }} />
               </div>
             </div>
           </div>
@@ -208,17 +204,15 @@ export default function Nosotros() {
         </FadeIn>
         <StaggerChildren className="equipo-grid" staggerDelay={0.12}>
           {[
-            { initials: "JL", name: "Dr. Juan Francisco Lozano", role: "Pediatr\u00eda del Desarrollo" },
-            { initials: "MJ", name: "Dra. Mar\u00eda Jos\u00e9 Delgado", role: "Pediatra \u00b7 S\u00edndrome de Down" },
-            { initials: "SG", name: "Dra. Sof\u00eda Garc\u00eda", role: "Terapia Conductual" },
-            { initials: "DP", name: "Lic. Daniela P\u00e1ez", role: "Terapia de Lenguaje" },
+            { initials: "JL", name: "Dr. Juan Francisco Lozano", role: "Pediatr\u00eda del Desarrollo", photo: "/team/dr-lozano.png", slug: "dr-juan-francisco-lozano" },
+            { initials: "MJ", name: "Dra. Mar\u00eda Jos\u00e9 Delgado", role: "Pediatra \u00b7 S\u00edndrome de Down", photo: "/team/dra-delgado.png", slug: "dra-maria-jose-delgado" },
+            { initials: "SG", name: "Dra. Sof\u00eda Garc\u00eda", role: "Terapia Conductual", photo: "/team/dra-garcia.png", slug: "dra-sofia-garcia" },
+            { initials: "DP", name: "Lic. Daniela P\u00e1ez", role: "Terapia de Lenguaje", photo: "/team/lic-paez.png", slug: "lic-daniela-paez" },
           ].map((d) => (
             <StaggerItem key={d.initials}>
-              <div className="doc">
-                <div className="doc-pill">
-                  <span style={{ fontFamily: "var(--font-serif), 'EB Garamond', serif", fontSize: 56, fontWeight: 600, color: "rgba(255,255,255,0.5)" }}>
-                    {d.initials}
-                  </span>
+              <Link href={`/equipo/${d.slug}`} className="doc">
+                <div className="doc-pill" style={{ overflow: "hidden", position: "relative" }}>
+                  <Image src={d.photo} alt={d.name} fill style={{ objectFit: "cover", objectPosition: "top" }} />
                   <div className="doc-overlay">
                     <h3>{d.name}</h3>
                     <p>{d.role}</p>
@@ -226,8 +220,8 @@ export default function Nosotros() {
                 </div>
                 <p className="doc-name">{d.name}</p>
                 <p className="doc-role">{d.role}</p>
-                <a href="tel:8182751125" className="doc-phone">{PHONE_ICON}</a>
-              </div>
+                <span className="doc-phone">{PHONE_ICON}</span>
+              </Link>
             </StaggerItem>
           ))}
         </StaggerChildren>
@@ -246,8 +240,8 @@ export default function Nosotros() {
         <StaggerChildren className="blog-masonry-grid" staggerDelay={0.12}>
           <StaggerItem>
             <Link href="/blog" className="blog-m-card blog-m-card--featured" style={{ display: "flex", flexDirection: "column" }}>
-              <div className="blog-m-img" style={{ background: "var(--teal)", flex: 1, display: "flex", alignItems: "center", justifyContent: "center" }}>
-                <span style={{ fontSize: 14, color: "rgba(255,255,255,0.5)" }}>Imagen blog</span>
+              <div className="blog-m-img" style={{ position: "relative", flex: 1 }}>
+                <Image src="/images/blog-orbita-origen.png" alt="Por qué nació Órbita" fill style={{ objectFit: "cover" }} />
               </div>
               <div className="blog-m-body">
                 <h3>&iquest;Por qu&eacute; naci&oacute; &Oacute;rbita y qu&eacute; significa?</h3>
@@ -264,8 +258,8 @@ export default function Nosotros() {
           </StaggerItem>
           <StaggerItem>
             <Link href="/blog" className="blog-m-card">
-              <div className="blog-m-img" style={{ background: "var(--orange-bg)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                <span style={{ fontSize: 13, color: "#888" }}>Imagen</span>
+              <div className="blog-m-img" style={{ position: "relative" }}>
+                <Image src="/images/blog-red-apoyo.png" alt="Crear una red de apoyo" fill style={{ objectFit: "cover" }} />
               </div>
               <div className="blog-m-body">
                 <h3>Lo que es crear una red de apoyo</h3>
@@ -279,8 +273,8 @@ export default function Nosotros() {
           </StaggerItem>
           <StaggerItem>
             <Link href="/blog" className="blog-m-card">
-              <div className="blog-m-img" style={{ background: "var(--teal-bg)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                <span style={{ fontSize: 13, color: "#888" }}>Imagen</span>
+              <div className="blog-m-img" style={{ position: "relative" }}>
+                <Image src="/images/blog-preocupacion.jpg" alt="Cuando hay preocupación" fill style={{ objectFit: "cover" }} />
               </div>
               <div className="blog-m-body">
                 <h3>Cuando hay preocupaci&oacute;n, &iquest;d&oacute;nde empezar?</h3>

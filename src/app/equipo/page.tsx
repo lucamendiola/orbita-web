@@ -91,7 +91,7 @@ export default function Equipo() {
             <div className="cta-banner-visual">
               <div className="cta-blob" />
               <div style={{ position: "relative", zIndex: 1, width: "100%", height: 280, display: "flex", alignItems: "flex-end", justifyContent: "center" }}>
-                <span style={{ fontSize: 14, color: "#888", marginBottom: 20 }}>Foto del equipo</span>
+                <img src="/images/team-fadein.png" alt="Equipo Órbita" style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "bottom" }} />
               </div>
             </div>
           </div>
