@@ -514,6 +514,7 @@ nav {
 .track-1 .anchor-3 { top: 50%; left: 0; transform: translate(-50%,-50%); }
 .track-2 .anchor-0 { top: 7%; right: 7%; transform: translate(30%,-30%); }
 .track-2 .anchor-1 { bottom: 7%; right: 7%; transform: translate(30%,30%); }
+.track-2 .anchor-2 { bottom: 7%; left: 7%; transform: translate(-30%,30%); }
 .track-3 .anchor-0 { top: 7%; left: 7%; transform: translate(-30%,-30%); }
 .track-3 .anchor-1 { bottom: 7%; left: 7%; transform: translate(-30%,30%); }
 

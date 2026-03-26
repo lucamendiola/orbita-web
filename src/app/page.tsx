@@ -175,10 +175,10 @@ export default function Home() {
               <span className="orbit-center-label">Tu hijo</span>
             </div>
 
-            {/* Track 1: Outer (4 nodes) */}
+            {/* Track 1: Outer (5 nodes) */}
             <div className="orbit-track track-1">
               <div className="orbit-node-anchor anchor-0">
-                <div className="orbit-node"><span className="node-dot" style={{ background: "var(--sky)" }} />Pediatr&iacute;a del desarrollo</div>
+                <div className="orbit-node"><span className="node-dot" style={{ background: "var(--sky)" }} />Pediatr&iacute;a del desarrollo y comportamiento</div>
               </div>
               <div className="orbit-node-anchor anchor-1">
                 <div className="orbit-node"><span className="node-dot" style={{ background: "var(--coral)" }} />Terapia conductual</div>
@@ -193,13 +193,16 @@ export default function Home() {
               <div className="deco-dot" style={{ width: 5, height: 5, background: "var(--sky)", opacity: 0.3, bottom: "20%", right: "8%" }} />
             </div>
 
-            {/* Track 2: Middle (2 nodes, reverse) */}
+            {/* Track 2: Middle (3 nodes, reverse) */}
             <div className="orbit-track track-2">
               <div className="orbit-node-anchor anchor-0">
                 <div className="orbit-node"><span className="node-dot" style={{ background: "var(--lavender)" }} />Neurolog&iacute;a pedi&aacute;trica</div>
               </div>
               <div className="orbit-node-anchor anchor-1">
-                <div className="orbit-node"><span className="node-dot" style={{ background: "var(--teal-light)" }} />Psiquiatr&iacute;a infantil</div>
+                <div className="orbit-node"><span className="node-dot" style={{ background: "var(--teal-light)" }} />Pediatr&iacute;a general</div>
+              </div>
+              <div className="orbit-node-anchor anchor-2">
+                <div className="orbit-node"><span className="node-dot" style={{ background: "var(--yellow)" }} />S&iacute;ndrome de Down</div>
               </div>
               <div className="deco-dot" style={{ width: 6, height: 6, background: "var(--lavender)", opacity: 0.35, top: "10%", right: "20%" }} />
             </div>
