@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
@@ -34,16 +35,14 @@ export default function Nosotros() {
       {/* ═══ HERO ═══ */}
       <section className="nosotros-hero">
         <FadeIn>
-          <div
-            className="nosotros-hero-img"
-            style={{
-              background: "linear-gradient(135deg, rgba(163,180,162,0.12), rgba(190,174,151,0.08))",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <span style={{ fontSize: 14, color: "#888" }}>Foto del equipo completo</span>
+          <div className="nosotros-hero-img" style={{ overflow: "hidden" }}>
+            <Image
+              src="/images/team-full.png"
+              alt="Equipo completo de Órbita Centro de Neurodesarrollo"
+              fill
+              style={{ objectFit: "cover" }}
+              priority
+            />
           </div>
         </FadeIn>
         <FadeIn delay={0.2}>
