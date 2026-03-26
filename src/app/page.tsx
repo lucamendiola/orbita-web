@@ -56,7 +56,7 @@ export default function Home() {
           <FadeIn delay={0.1}>
             <div className="hero-tag">
               <span className="hero-tag-dot" />
-              Alianza con TecSalud &middot; Monterrey
+              Centro de Neurodesarrollo &middot; Monterrey
             </div>
           </FadeIn>
           <FadeIn delay={0.2}>
