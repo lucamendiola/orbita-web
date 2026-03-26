@@ -43,6 +43,15 @@ export default function Home() {
 
       {/* ═══ HERO ═══ */}
       <section className="hero">
+        {/* Floating organic shapes */}
+        <div className="floating-shapes">
+          <div className="floating-circle animate-drift-right" style={{ width: 380, height: 380, background: 'var(--coral)', top: '-80px', right: '-60px', opacity: 0.08 }} />
+          <div className="floating-circle animate-drift-left" style={{ width: 300, height: 300, background: 'var(--lavender)', top: '30%', left: '-100px', opacity: 0.1 }} />
+          <div className="floating-circle animate-drift-up" style={{ width: 240, height: 240, background: 'var(--orange)', bottom: '-40px', right: '25%', opacity: 0.08 }} />
+          <div className="floating-circle animate-float" style={{ width: 80, height: 80, background: 'var(--coral-bg)', top: '20%', right: '8%', opacity: 0.5, filter: 'blur(0px)', borderRadius: '50%' }} />
+          <div className="floating-circle animate-drift-left" style={{ width: 48, height: 48, background: 'var(--lavender-bg)', bottom: '15%', left: '5%', opacity: 0.5, filter: 'blur(0px)', borderRadius: '50%' }} />
+          <div className="floating-circle animate-drift-up" style={{ width: 24, height: 24, background: 'var(--teal-light)', top: '60%', left: '35%', opacity: 0.3, filter: 'blur(0px)', borderRadius: '50%' }} />
+        </div>
         <div className="hero-left">
           <FadeIn delay={0.1}>
             <div className="hero-tag">
@@ -257,7 +266,12 @@ export default function Home() {
 
       {/* ═══ SERVICIOS ═══ */}
       <section className="servicios">
-        <div className="servicios-top">
+        {/* Floating organic shapes */}
+        <div className="floating-shapes">
+          <div className="floating-circle animate-drift-right" style={{ width: 300, height: 300, background: 'var(--lime)', top: '-60px', left: '-80px', opacity: 0.08 }} />
+          <div className="floating-circle animate-drift-up" style={{ width: 200, height: 200, background: 'var(--sky)', bottom: '-40px', right: '-40px', opacity: 0.1 }} />
+        </div>
+        <div className="servicios-top" style={{ position: 'relative', zIndex: 1 }}>
           <FadeIn>
             <div>
               <p className="section-label">Nuestros servicios</p>
@@ -318,6 +332,11 @@ export default function Home() {
 
       {/* ═══ CONDICIONES ═══ */}
       <section className="condiciones" style={{ textAlign: "center" }}>
+        {/* Floating organic shapes */}
+        <div className="floating-shapes">
+          <div className="floating-circle animate-drift-left" style={{ width: 260, height: 260, background: 'var(--coral)', top: '-60px', right: '10%', opacity: 0.07 }} />
+          <div className="floating-circle animate-drift-right" style={{ width: 200, height: 200, background: 'var(--lavender)', bottom: '-40px', left: '5%', opacity: 0.08 }} />
+        </div>
         <FadeIn>
           <h2>Acompa&ntilde;amos historias, no etiquetas</h2>
           <p style={{ maxWidth: 480, margin: "12px auto 36px", fontSize: 17 }}>
