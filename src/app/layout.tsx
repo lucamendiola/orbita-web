@@ -45,6 +45,43 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
+const orgJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalOrganization",
+  name: "Órbita Centro de Neurodesarrollo",
+  url: "https://orbitaclinica.com",
+  telephone: "+528182751125",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Av. Gómez Morín 300, Local 1120",
+    addressLocality: "San Pedro Garza García",
+    addressRegion: "Nuevo León",
+    postalCode: "66278",
+    addressCountry: "MX",
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "19:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: "Saturday",
+      opens: "09:00",
+      closes: "14:00",
+    },
+  ],
+  medicalSpecialty: [
+    "Pediatrics",
+    "Neurology",
+    "Psychiatry",
+    "Speech-Language Pathology",
+  ],
+  sameAs: ["https://www.instagram.com/orbita.clinica/"],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -52,7 +89,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${garamond.variable} ${nunito.variable}`}>
-      <body>{children}</body>
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

@@ -11,10 +11,22 @@ export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
 }
 
-export function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Metadata {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const post = getPost(slug);
+  if (!post) return { title: "Blog — Órbita" };
   return {
-    title: "Blog — Órbita Centro de Neurodesarrollo",
-    description: "Artículo del blog de Órbita Centro de Neurodesarrollo.",
+    title: post.title,
+    description: post.description,
+    authors: [{ name: post.author }],
+    openGraph: {
+      title: post.title,
+      description: post.description,
+      type: "article",
+      publishedTime: post.date,
+      authors: [post.author],
+      ...(post.coverImage && { images: [{ url: post.coverImage, alt: post.coverImageAlt || post.title }] }),
+    },
   };
 }
 
@@ -29,8 +41,34 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     day: "numeric",
   });
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.description,
+    datePublished: post.date,
+    author: {
+      "@type": "Person",
+      name: post.author,
+    },
+    publisher: {
+      "@type": "MedicalOrganization",
+      name: "Órbita Centro de Neurodesarrollo",
+      url: "https://orbitaclinica.com",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://orbitaclinica.com/blog/${slug}`,
+    },
+    ...(post.coverImage && { image: post.coverImage }),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Nav activePage="blog" />
 
       {/* HERO */}
