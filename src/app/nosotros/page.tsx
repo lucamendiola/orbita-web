@@ -5,6 +5,17 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import FadeIn from "@/components/FadeIn";
 import StaggerChildren, { StaggerItem } from "@/components/StaggerChildren";
+import { DOCTORS } from "@/lib/data";
+
+const COLOR_MAP: Record<string, string> = {
+  lavender: "var(--lavender)",
+  coral: "var(--coral)",
+  "teal-light": "var(--teal-light)",
+  orange: "var(--orange)",
+  sky: "var(--sky)",
+  lime: "var(--lime)",
+  yellow: "var(--yellow)",
+};
 
 const WA_URL =
   "https://wa.me/528182751125?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita";
@@ -203,15 +214,10 @@ export default function Nosotros() {
           </div>
         </FadeIn>
         <StaggerChildren className="equipo-grid" staggerDelay={0.12}>
-          {[
-            { initials: "JL", name: "Dr. Juan Francisco Lozano", role: "Pediatr\u00eda del Desarrollo", photo: "/team/dr-lozano.png", slug: "dr-juan-francisco-lozano" },
-            { initials: "MJ", name: "Dra. Mar\u00eda Jos\u00e9 Delgado", role: "Pediatra \u00b7 S\u00edndrome de Down", photo: "/team/dra-delgado.png", slug: "dra-maria-jose-delgado" },
-            { initials: "SG", name: "Dra. Sof\u00eda Garc\u00eda", role: "Terapia Conductual", photo: "/team/dra-garcia.png", slug: "dra-sofia-garcia" },
-            { initials: "DP", name: "Lic. Daniela P\u00e1ez", role: "Terapia de Lenguaje", photo: "/team/lic-paez.png", slug: "lic-daniela-paez" },
-          ].map((d) => (
-            <StaggerItem key={d.initials}>
+          {DOCTORS.map((d) => (
+            <StaggerItem key={d.slug}>
               <Link href={`/equipo/${d.slug}`} className="doc">
-                <div className="doc-pill" style={{ overflow: "hidden", position: "relative" }}>
+                <div className="doc-pill" style={{ overflow: "hidden", position: "relative", background: COLOR_MAP[d.color] || "var(--sage)" }}>
                   <Image src={d.photo} alt={d.name} fill style={{ objectFit: "cover", objectPosition: "top" }} />
                   <div className="doc-overlay">
                     <h3>{d.name}</h3>

@@ -831,7 +831,7 @@ nav {
 /* ─── EQUIPO ─── */
 .equipo { border-bottom: 1px solid var(--border); }
 .equipo-header { text-align: center; margin-bottom: 56px; }
-.equipo-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+.equipo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
 .doc { text-align: center; transition: transform 0.3s var(--ease); cursor: pointer; position: relative; }
 .doc:hover { transform: translateY(-6px); }
 .doc-pill {
@@ -845,10 +845,6 @@ nav {
   overflow: hidden;
   margin-bottom: 16px;
 }
-.doc:nth-child(1) .doc-pill { background: var(--lavender); }
-.doc:nth-child(2) .doc-pill { background: var(--coral); }
-.doc:nth-child(3) .doc-pill { background: var(--teal-light); }
-.doc:nth-child(4) .doc-pill { background: var(--orange); }
 .doc-pill img { object-fit: cover; object-position: top; }
 .doc-overlay {
   position: absolute;

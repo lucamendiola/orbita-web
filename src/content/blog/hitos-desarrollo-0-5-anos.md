@@ -224,7 +224,7 @@ En Órbita, la evaluación del desarrollo no es un evento aislado. Es un proceso
 
 ### Paso 1: Consulta inicial con pediatría del desarrollo
 
-El Dr. Juan Francisco Lozano o el especialista correspondiente realiza una historia clínica completa. Se revisan antecedentes, hitos alcanzados, preocupaciones de los padres y observación directa del niño durante la consulta. Esta primera sesión suele durar entre 45 y 60 minutos.
+El Dr. Juan Francisco Ramírez o el especialista correspondiente realiza una historia clínica completa. Se revisan antecedentes, hitos alcanzados, preocupaciones de los padres y observación directa del niño durante la consulta. Esta primera sesión suele durar entre 45 y 60 minutos.
 
 ### Paso 2: Evaluaciones complementarias
 

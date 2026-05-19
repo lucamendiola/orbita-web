@@ -26,6 +26,7 @@ const COLOR_MAP: Record<string, string> = {
   orange: "var(--orange)",
   sky: "var(--sky)",
   lime: "var(--lime)",
+  yellow: "var(--yellow)",
 };
 
 export const metadata: Metadata = {
