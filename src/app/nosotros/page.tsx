@@ -15,6 +15,7 @@ const COLOR_MAP: Record<string, string> = {
   sky: "var(--sky)",
   lime: "var(--lime)",
   yellow: "var(--yellow)",
+  peach: "var(--peach)",
 };
 
 const WA_URL =
