@@ -320,6 +320,16 @@ export const DOCTORS: Doctor[] = [
     specialties: ["Evaluaci\u00f3n del desarrollo", "TDAH", "TEA", "Retrasos del desarrollo"],
   },
   {
+    slug: "dra-jessica-mendoza",
+    initials: "JM",
+    name: "Dra. Jessica Mendoza",
+    role: "Pediatra del desarrollo y comportamiento",
+    color: "lime",
+    photo: "/team/dra-mendoza.png",
+    bio: "Pediatra del desarrollo y comportamiento con enfoque integral en la evaluaci\u00f3n y acompa\u00f1amiento de ni\u00f1os y adolescentes con trastornos del neurodesarrollo. Su pr\u00e1ctica combina rigor cl\u00ednico con una visi\u00f3n humana, trabajando de cerca con familias y con el equipo transdisciplinario de \u00d3rbita.",
+    specialties: ["Evaluaci\u00f3n del desarrollo", "TDAH", "TEA", "Retrasos del desarrollo"],
+  },
+  {
     slug: "lic-daniela-paez",
     initials: "DP",
     name: "Lic. Daniela Pa\u00e9z",
@@ -328,6 +338,16 @@ export const DOCTORS: Doctor[] = [
     photo: "/team/lic-paez.png",
     bio: "Licenciada y maestra en Trastornos de la Comunicaci\u00f3n por universidades en Texas. Ha trabajado en cl\u00ednicas de rehabilitaci\u00f3n, hospitales y escuelas en EE.UU., atendiendo a beb\u00e9s, ni\u00f1os y adolescentes con trastornos del lenguaje, habla, alimentaci\u00f3n y degluci\u00f3n. Fundadora de Plan Diez Terapia del Lenguaje, combina su formaci\u00f3n biling\u00fce e internacional con un enfoque familiar y transdisciplinario.",
     specialties: ["Trastornos del lenguaje", "Habla", "Alimentaci\u00f3n y degluci\u00f3n", "Terapia biling\u00fce"],
+  },
+  {
+    slug: "lic-sofia-trevino",
+    initials: "ST",
+    name: "Lic. Sof\u00eda Trevi\u00f1o",
+    role: "Terapeuta del lenguaje y habla",
+    color: "yellow",
+    photo: "/team/lic-trevino.png",
+    bio: "Terapeuta del lenguaje y habla, con experiencia cl\u00ednica en evaluaci\u00f3n e intervenci\u00f3n de trastornos de la comunicaci\u00f3n, habla, lenguaje y alimentaci\u00f3n en ni\u00f1os y adolescentes. Su trabajo se enfoca en planes personalizados que integran a la familia y a la escuela para potenciar la comunicaci\u00f3n funcional de cada paciente.",
+    specialties: ["Trastornos del lenguaje", "Habla", "Comunicaci\u00f3n", "Intervenci\u00f3n temprana"],
   },
   {
     slug: "lic-nora-martinez",
