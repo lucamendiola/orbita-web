@@ -833,8 +833,10 @@ nav {
 .equipo { border-bottom: 1px solid var(--border); }
 .equipo-header { text-align: center; margin-bottom: 56px; }
 .equipo-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
-/* Center last row when it has exactly 2 trailing items in a 4-col grid */
-.equipo-grid > :nth-child(4n+1):nth-last-child(2) { grid-column-start: 2; }
+/* Center last row of 2 trailing items only on desktop 4-col grid */
+@media (min-width: 1025px) {
+  .equipo-grid > :nth-child(4n+1):nth-last-child(2) { grid-column-start: 2; }
+}
 .doc { text-align: center; transition: transform 0.3s var(--ease); cursor: pointer; position: relative; }
 .doc:hover { transform: translateY(-6px); }
 .doc-pill {
@@ -860,6 +862,10 @@ nav {
   transition: opacity 0.3s var(--ease);
 }
 .doc:hover .doc-overlay { opacity: 1; }
+/* Disable hover overlay on touch devices (no real hover, prevents sticky state) */
+@media (hover: none) {
+  .doc-overlay { display: none; }
+}
 .doc-overlay h3 {
   font-family: 'Satoshi', sans-serif;
   font-size: 15px;
