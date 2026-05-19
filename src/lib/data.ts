@@ -320,16 +320,6 @@ export const DOCTORS: Doctor[] = [
     specialties: ["Evaluaci\u00f3n del desarrollo", "TDAH", "TEA", "Retrasos del desarrollo"],
   },
   {
-    slug: "dra-jessica-mendoza",
-    initials: "JM",
-    name: "Dra. Jessica Mendoza",
-    role: "Pediatra del desarrollo y comportamiento",
-    color: "lime",
-    photo: "/team/dra-mendoza.png",
-    bio: "Pediatra del desarrollo y comportamiento con enfoque integral en la evaluaci\u00f3n y acompa\u00f1amiento de ni\u00f1os y adolescentes con trastornos del neurodesarrollo. Su pr\u00e1ctica combina rigor cl\u00ednico con una visi\u00f3n humana, trabajando de cerca con familias y con el equipo transdisciplinario de \u00d3rbita.",
-    specialties: ["Evaluaci\u00f3n del desarrollo", "TDAH", "TEA", "Retrasos del desarrollo"],
-  },
-  {
     slug: "lic-daniela-paez",
     initials: "DP",
     name: "Lic. Daniela Pa\u00e9z",
@@ -388,6 +378,16 @@ export const DOCTORS: Doctor[] = [
     photo: "/team/lic-cantu.png",
     bio: "Psicopedagoga con experiencia en evaluaci\u00f3n e intervenci\u00f3n del aprendizaje en ni\u00f1os y adolescentes. Trabaja en coordinaci\u00f3n con familias y escuelas para detectar dificultades espec\u00edficas del aprendizaje y dise\u00f1ar estrategias personalizadas que fortalezcan tanto habilidades acad\u00e9micas como confianza personal.",
     specialties: ["Dificultades de aprendizaje", "Dislexia", "Disgraf\u00eda", "Estrategias escolares"],
+  },
+  {
+    slug: "dra-jessica-mendoza",
+    initials: "JM",
+    name: "Dra. Jessica Mendoza",
+    role: "Pediatra del desarrollo y comportamiento",
+    color: "lime",
+    photo: "/team/dra-mendoza.png",
+    bio: "Pediatra del desarrollo y comportamiento con enfoque integral en la evaluaci\u00f3n y acompa\u00f1amiento de ni\u00f1os y adolescentes con trastornos del neurodesarrollo. Su pr\u00e1ctica combina rigor cl\u00ednico con una visi\u00f3n humana, trabajando de cerca con familias y con el equipo transdisciplinario de \u00d3rbita.",
+    specialties: ["Evaluaci\u00f3n del desarrollo", "TDAH", "TEA", "Retrasos del desarrollo"],
   },
 ];
 
